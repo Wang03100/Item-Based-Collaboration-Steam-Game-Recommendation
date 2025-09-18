@@ -1,10 +1,14 @@
 # Steam Recommendation System
 
-A scalable game recommendation engine built with item-based collaborative filtering, designed to handle large-scale Steam gaming data efficiently. Dataset from https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam?select=recommendations.csv and SteamSpy API for metadata
+A scalable game recommendation engine built with item-based collaborative filtering, designed to handle large-scale Steam gaming data efficiently. Dataset from https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam?select=recommendations.csv and SteamSpy API for metadata.
 
 ## Overview
 
 This system processes millions of user-game interactions to generate personalized game recommendations. By leveraging sparse matrix operations and the SteamSpy API, it provides accurate recommendations while maintaining optimal memory usage.
+
+## Disclaimer
+
+Dataset range is limited to 2024 prior.
 
 ## Key Features
 
