@@ -1,2 +1,4 @@
 .DS_Store
-data/*
+data/*.csv
+data/*.json
+data/*.pkl
