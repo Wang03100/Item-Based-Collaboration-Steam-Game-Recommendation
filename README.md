@@ -1,6 +1,6 @@
 # Steam Recommendation System
 
-A scalable game recommendation engine built with item-based collaborative filtering, designed to handle large-scale Steam gaming data efficiently.
+A scalable game recommendation engine built with item-based collaborative filtering, designed to handle large-scale Steam gaming data efficiently. Dataset from https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam?select=recommendations.csv and SteamSpy API for metadata
 
 ## Overview
 
@@ -68,7 +68,7 @@ Input: game_id
 * Metadata integration and rich recommendations
 
 **In Development:**
-* Content-based fallback system for unknown games
+* Content-based genre fallback system for unknown games
 * FastAPI REST endpoint
 * Comprehensive testing and validation
 
@@ -113,6 +113,8 @@ source .venv/bin/activate
 # Install dependencies
 pip install pandas numpy scipy scikit-learn requests
 
+# Install kaggle dataset into data/ folder
+https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam?select=recommendations.csv
 ```
 
 ## File Structure
@@ -120,12 +122,13 @@ pip install pandas numpy scipy scikit-learn requests
 ```
 ├── .venv/                         # Python virtual environment
 ├── data/
-│   ├── recommendations.csv        # installed from https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam?select=recommendations.csv
-|   ├── Other csv and pkl          # Will be provided after downloading the Kaggle dataset and running the three ipynb in order of data_cleaning, user_item_matrix, then item_based_collab
+│   ├── recommendations.csv        # from https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam?select=recommendations.csv
 ├── notebooks/
+│                                  # Run ipynb in following order: data_cleaning, user_item_matrix, item_based_collab, fallback_genre_based
 │   ├── data_cleaning.ipynb        # Data preprocessing and SteamSpy API integration
 │   ├── user_item_matrix.ipynb     # Sparse matrix creation and optimization
 │   └── item_based_collab.ipynb    # KNN collaborative filtering implementation
+│   └── fallback_genre_based.ipynb # SteamSpy API content-based genre recommendation
 └── README.md
 ```
 
