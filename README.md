@@ -115,7 +115,7 @@ python -m venv .venv
 source .venv/bin/activate
 
 # Install dependencies
-pip install pandas numpy scipy scikit-learn requests
+pip install pandas numpy scipy scikit-learn requests matplotlib
 
 # Install kaggle dataset into data/ folder
 https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam?select=recommendations.csv
