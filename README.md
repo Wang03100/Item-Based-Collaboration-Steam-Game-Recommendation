@@ -138,7 +138,7 @@ https://www.kaggle.com/datasets/antonkozyriev/game-recommendations-on-steam?sele
 ├── notebooks/
 │                                  # Run ipynb in following order: data_cleaning, user_item_matrix, item_based_collab, fallback_genre_based
 │   ├── data_cleaning.ipynb        # Data preprocessing and SteamSpy API integration
-│   ├── user_item_matrix.ipynb     # Sparse matrix creation and optimization
+│   ├── item_user_matrix.ipynb     # Sparse matrix creation and optimization
 │   └── item_based_collab.ipynb    # KNN collaborative filtering implementation
 │   └── fallback_genre_based.ipynb # SteamSpy API content-based genre recommendation
 └── README.md
