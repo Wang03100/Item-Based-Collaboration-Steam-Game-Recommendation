@@ -6,6 +6,14 @@ A scalable game recommendation engine built with item-based collaborative filter
 
 This system processes millions of user-game interactions to generate personalized game recommendations. By leveraging sparse matrix operations and the SteamSpy API, it provides accurate recommendations while maintaining optimal memory usage.
 
+## Why Item-Based Instead of User-Based
+
+User-based is finding users with similar game preference and then suggesting game from that preference. The issue is game preferences change over time and there is around 1.58 million users. 1.58 M x 1.58 M ~= 200 GB of memory needed to calculate a similarity matrix.
+
+Item-based is finding games thats similar to another game based on user interaction. This filtering was chosen as it ignores current trend and provides 20k x 20k ~= 132.7 MB of memory to calculate a similarity matrix.
+
+
+
 ## Disclaimer
 
 Dataset range is limited to 2024 prior.
